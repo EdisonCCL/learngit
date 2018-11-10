@@ -15,3 +15,6 @@ git push origin master
 #这条指令的意思是把远程库中的更新合并到本地库中，
 #–rebase的作用是取消掉本地库中刚刚的commit，并把他们接到更新后的版本库之中。
 git pull --rebase origin master
+
+#提示：fatal: refusing to merge unrelated histories
+git pull origin master --allow-unrelated-histories
