@@ -4,9 +4,11 @@ ccl is a writer.
 
 #新建本地库
 git init
+#保存到本地库
 git add filename
 git commit -m 'description'
-git remote add origin 
+#第一次连远程库需要前两条语句 之后都第三条语句直接传
+git remote add origin git@github.com:EdisonCCL/learngit.git
 git push -u origin master
 git push origin master
 #当对远程库进行了在线修改 因为本地库与远程库不一致 没更新 所以需要先拉下来 再上传
