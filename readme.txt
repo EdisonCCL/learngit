@@ -1,20 +1,26 @@
 Git is a distributed version contral systerm.
 Git is a free software distributed under GPL.
 ccl is a writer.
+#åˆ›å»ºgitç”¨æˆ·
+git config --global user.email '1******@***.com'
+git config --global user.name '***'
 
-#ĞÂ½¨±¾µØ¿â
+#æ–°å»ºæœ¬åœ°åº“
 git init
-#±£´æµ½±¾µØ¿â
+#ä¿å­˜åˆ°æœ¬åœ°åº“
 git add filename
 git commit -m 'description'
-#µÚÒ»´ÎÁ¬Ô¶³Ì¿âĞèÒªÇ°Á½ÌõÓï¾ä Ö®ºó¶¼µÚÈıÌõÓï¾äÖ±½Ó´«
+#ç¬¬ä¸€æ¬¡è¿è¿œç¨‹åº“éœ€è¦å‰ä¸¤æ¡è¯­å¥ ä¹‹åéƒ½ç¬¬ä¸‰æ¡è¯­å¥ç›´æ¥ä¼ 
 git remote add origin git@github.com:EdisonCCL/learngit.git
 git push -u origin master
 git push origin master
-#µ±¶ÔÔ¶³Ì¿â½øĞĞÁËÔÚÏßĞŞ¸Ä ÒòÎª±¾µØ¿âÓëÔ¶³Ì¿â²»Ò»ÖÂ Ã»¸üĞÂ ËùÒÔĞèÒªÏÈÀ­ÏÂÀ´ ÔÙÉÏ´«
-#ÕâÌõÖ¸ÁîµÄÒâË¼ÊÇ°ÑÔ¶³Ì¿âÖĞµÄ¸üĞÂºÏ²¢µ½±¾µØ¿âÖĞ£¬
-#¨CrebaseµÄ×÷ÓÃÊÇÈ¡Ïûµô±¾µØ¿âÖĞ¸Õ¸ÕµÄcommit£¬²¢°ÑËûÃÇ½Óµ½¸üĞÂºóµÄ°æ±¾¿âÖ®ÖĞ¡£
+#å½“å¯¹è¿œç¨‹åº“è¿›è¡Œäº†åœ¨çº¿ä¿®æ”¹ å› ä¸ºæœ¬åœ°åº“ä¸è¿œç¨‹åº“ä¸ä¸€è‡´ æ²¡æ›´æ–° æ‰€ä»¥éœ€è¦å…ˆæ‹‰ä¸‹æ¥ å†ä¸Šä¼ 
+#è¿™æ¡æŒ‡ä»¤çš„æ„æ€æ˜¯æŠŠè¿œç¨‹åº“ä¸­çš„æ›´æ–°åˆå¹¶åˆ°æœ¬åœ°åº“ä¸­ï¼Œ
+#â€“rebaseçš„ä½œç”¨æ˜¯å–æ¶ˆæ‰æœ¬åœ°åº“ä¸­åˆšåˆšçš„commitï¼Œå¹¶æŠŠä»–ä»¬æ¥åˆ°æ›´æ–°åçš„ç‰ˆæœ¬åº“ä¹‹ä¸­ã€‚
 git pull --rebase origin master
 
-#ÌáÊ¾£ºfatal: refusing to merge unrelated histories
+#æç¤ºï¼šfatal: refusing to merge unrelated histories
 git pull origin master --allow-unrelated-histories
+
+#æç¤ºï¼šfatel: git remote origin already exist
+git remote rm origin
