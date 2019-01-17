@@ -24,3 +24,9 @@ git pull origin master --allow-unrelated-histories
 
 #提示：fatel: git remote origin already exist
 git remote rm origin
+ 
+#新建分支并推到远端
+git checkout -b ccl_branch
+git push -u origin ccl_branch:ccl_branch
+#查看分支
+git checkout 
