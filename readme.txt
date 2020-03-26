@@ -30,3 +30,9 @@ git checkout -b ccl_branch
 git push -u origin ccl_branch:ccl_branch
 #查看分支
 git checkout 
+
+#删除远端文件
+#先删除本地文件
+git rm -r --cached filename
+git commit -m '注释'
+git push origin master
